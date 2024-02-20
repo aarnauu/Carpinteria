@@ -1,0 +1,240 @@
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+    font-size: 24px;
+    color: #000; /* Color del icono */
+    background-color: transparent;
+    border: transparent;
+    user-select: none;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+    display: none;
+    transition: all 0.5s ease; /* Transición para todas las propiedades */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50%;
+}
+
+.menu li {
+    margin-bottom: 10%; /* Ajusta el margen entre elementos de menú */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu.show {
+    display: block;
+    height: 96.9%; /* Altura deseada del menú cuando esté abierto */
+    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+    
+}
+
+/* Estilos para el icono de "X" */
+.close-menu {
+    position: absolute;
+    top: 2.5%;
+    left: 14%;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+header {
+    width: 100.8%; /* Ancho deseado del contenedor */
+    padding: 2px; /* Espacio interno alrededor del contenido */
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    font-family: sans-serif;
+
+
+}
+body {
+    background-color: rgb(212, 212, 212);
+}
+
+/* Estilos para el elemento con la clase "call" */
+
+/* Estilos para el elemento con la clase "direccion" */
+.direccion {
+    position: absolute;
+    align-self: center; /* Ajusta la distancia desde la parte superior del encabezado */
+    right: 3%; /* Ajusta la distancia desde el lado derecho del encabezado */
+    text-decoration: none;
+    color: #333333;
+    user-select: none;
+}
+
+.call {
+    position: absolute;
+    align-self: center;
+    right: 14%;
+    text-decoration: none;
+    color: #333333;
+    user-select: none;
+}
+
+.presu {
+    position: absolute;
+    align-self: center;
+    right: 25%;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Estilos para centrar verticalmente el icono con respecto al texto */
+.DPvwYc.xPRkMe {
+    vertical-align: middle; /* Centra verticalmente el icono */
+}
+
+.DPvwYc {
+    font-family: "Material Icons Extended";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga" 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+/* Estilos para el modal */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 33%; /* Ajusta el ancho del modal según sea necesario */
+    max-width: 600px; /* Ancho máximo del modal */
+    height: 65%; /* Ajusta la altura del modal según sea necesario */
+    max-height: 600px; /* Altura máxima del modal */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido excede la altura máxima */
+  }
+  
+  
+  
+  /* Estilos para el encabezado del modal */
+  .modal-header {
+    background-color: #1c62ad; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    padding: 1%;
+  }
+  
+  /* Estilos para el botón de cerrar */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(0, 0, 0); /* Color del texto blanco */
+    font-size: 20px;
+    border: transparent;
+  }
+
+  .title-modal {
+    user-select: none;
+    text-align: center;
+  }
+
+/* Estilos para el formulario */
+#quoteForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* Estilos para los contenedores de inputs */
+.input-wrapper {
+    position: relative;
+    margin-bottom: 15px; /* Espacio entre los elementos */
+    color: #918f8f;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-text {
+    position: relative;
+    color: #918f8f;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+  }
+  
+  /* Estilos para los inputs */
+  input, textarea {
+    border: 1px solid #aaa8a8;
+    border-radius: 5px;
+    padding: 8px;
+    width: 300px; /* Ancho de los inputs */
+  }
+  
+/* Estilos para los labels */
+label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out;
+  pointer-events: none;
+  color: #aaa8a8;
+  font-size: 14px;
+}
+
+/* Estilos para los inputs con contenido */
+input:not(:placeholder-shown) ~ label {
+  top: 50%;
+  font-size: 12px;
+  color: #1c62ad;
+}
+
+/* Estilos para el botón dentro del formulario */
+.submit {
+  background-color: #1a73e8; /* Cambia el color de fondo del botón */
+  color: white; /* Cambia el color del texto del botón */
+  border: none; /* Quita el borde del botón */
+  border-radius: 0; /* Hace que los bordes del botón sean rectangulares */
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px;
+}
